@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria", "Libreria\Libreria.csproj", "{D7FECDF8-617D-49A2-B3F4-E00B8ACFCCCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi", "RestApi\RestApi.csproj", "{9898291C-2268-486B-9856-4233FEE75115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiciosWeb", "ServiciosWeb\ServiciosWeb.csproj", "{5AB0A82E-B8D5-4DB7-A99F-F84A790B95BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7FECDF8-617D-49A2-B3F4-E00B8ACFCCCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FECDF8-617D-49A2-B3F4-E00B8ACFCCCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FECDF8-617D-49A2-B3F4-E00B8ACFCCCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FECDF8-617D-49A2-B3F4-E00B8ACFCCCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9898291C-2268-486B-9856-4233FEE75115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9898291C-2268-486B-9856-4233FEE75115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9898291C-2268-486B-9856-4233FEE75115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9898291C-2268-486B-9856-4233FEE75115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB0A82E-B8D5-4DB7-A99F-F84A790B95BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB0A82E-B8D5-4DB7-A99F-F84A790B95BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB0A82E-B8D5-4DB7-A99F-F84A790B95BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB0A82E-B8D5-4DB7-A99F-F84A790B95BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9BF1517-103F-45AF-A11F-9C64099E2770}
+	EndGlobalSection
+EndGlobal
