@@ -19,7 +19,7 @@ namespace RestApi.Controllers
         /// Obtiene todos los clientes
         /// </summary>
         /// <returns>Retorna un listado de clientes.</returns>
-        [SwaggerResponse(typeof(ClienteResumenModelo))]
+        [SwaggerResponse(typeof(ClienteResumenModelo[]))]
         public IHttpActionResult Get()
         {
             return Ok(new[] { new ClienteResumenModelo { Id = 1, Nombre = "Uno" } });
@@ -31,7 +31,7 @@ namespace RestApi.Controllers
         /// <param name="id">id del cliente a buscar</param>
         /// <returns>Retorna el cliente encontrado.</returns>
         [SwaggerResponse(typeof(ClienteDetalleModelo))]
-        [SwaggerResponse(HttpStatusCode.NotFound, typeof(object), Description = "Si no existe ningun cliente con el id indicado.")]
+        [SwaggerResponse(HttpStatusCode.NotFound, typeof(void), Description = "Si no existe ningun cliente con el id indicado.")]
         public IHttpActionResult Get(int id)
         {
             if (id < 1)
@@ -69,9 +69,9 @@ namespace RestApi.Controllers
         /// <param name="id">Identificador del cliente</param>
         /// <param name="cliente">Nuevos datos para actualizar el cliente</param>
         /// <returns>Retorna OK si se logra actualizar el cliente</returns>
-        [SwaggerResponse(HttpStatusCode.OK, null)]
+        [SwaggerResponse(HttpStatusCode.OK, typeof(void))]
         [SwaggerResponse(HttpStatusCode.BadRequest, typeof(ModelStateDictionary))]
-        [SwaggerResponse(HttpStatusCode.NotFound, typeof(object), Description = "Si no existe ningun cliente con el id indicado.")]
+        [SwaggerResponse(HttpStatusCode.NotFound, typeof(void), Description = "Si no existe ningun cliente con el id indicado.")]
         public IHttpActionResult Put(int id, ClienteCrearEditarModelo cliente)
         {
             if (!ModelState.IsValid)
@@ -93,7 +93,8 @@ namespace RestApi.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [SwaggerResponse(HttpStatusCode.NotFound, typeof(object), Description = "Si no existe ningun cliente con el id indicado.")]
+        [SwaggerResponse(typeof(void))]
+        [SwaggerResponse(HttpStatusCode.NotFound, typeof(void), Description = "Si no existe ningun cliente con el id indicado.")]
         public IHttpActionResult Delete(int id)
         {
             if (id <= 0)
